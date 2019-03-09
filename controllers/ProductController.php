@@ -15,7 +15,7 @@ use yii\web\HttpException;
 class ProductController extends AppController
 {
     public function actionView($id) {
-        $id = Yii::$app->request->get('id');
+        //$id = Yii::$app->request->get('id');
         $product = Product::findOne($id);
         if (!$product) {
             throw new HttpException(404, 'Такого товара не существует...');
