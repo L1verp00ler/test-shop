@@ -1,6 +1,6 @@
 <?php if (!empty($session['cart'])): ?>
     <div class="table-responsive">
-        <div class="table table-hover table-striped">
+        <table class="table table-hover table-striped">
             <thead>
                 <tr>
                     <th>Фото</th>
@@ -29,7 +29,7 @@
                     <td><?= $session['cart.sum'] ?></td>
                 </tr>
             </tbody>
-        </div>
+        </table>
     </div>
 <?php else: ?>
     <h3>Корзина пуста!</h3>
